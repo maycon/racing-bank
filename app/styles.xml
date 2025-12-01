@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Retro Alert Dialog Style -->
+    <style name="RetroAlertDialog" parent="Theme.MaterialComponents.Dialog.Alert">
+        <item name="android:windowBackground">@color/retro_dark_purple</item>
+        <item name="android:textColorPrimary">@color/retro_cyan</item>
+        <item name="android:textColorSecondary">@color/retro_pink</item>
+        <item name="colorAccent">@color/retro_green</item>
+        <item name="android:fontFamily">@font/retro_computer</item>
+        <item name="buttonBarNegativeButtonStyle">@style/RetroButton.Negative</item>
+        <item name="buttonBarPositiveButtonStyle">@style/RetroButton.Positive</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/RetroAlertDialog.Title</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+    </style>
+
+    <!-- Retro Alert Dialog Title Style -->
+    <style name="RetroAlertDialog.Title" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/retro_cyan</item>
+        <item name="android:fontFamily">@font/retro_computer</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+    
+    <!-- Retro Switch Style -->
+    <style name="RetroSwitch" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="colorControlActivated">@color/retro_cyan</item>
+        <item name="colorSwitchThumbNormal">@color/retro_gray</item>
+        <item name="android:colorForeground">@color/retro_dark_blue</item>
+    </style>
+    
+    <!-- Bottom Navigation Style -->
+    <style name="BottomNavigationStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">@color/retro_dark_blue</item>
+        <item name="itemIconTint">@color/bottom_nav_color</item>
+        <item name="itemTextColor">@color/bottom_nav_color</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+    
+    <!-- Tab Layout Style -->
+    <style name="TabLayoutStyle" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabSelectedTextColor">@color/retro_cyan</item>
+        <item name="tabTextColor">@color/retro_gray</item>
+        <item name="tabIndicatorColor">@color/retro_cyan</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabTextAppearance">@style/TabTextAppearance</item>
+    </style>
+    
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:fontFamily">@font/retro_computer</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    
+    <!-- Card View Style -->
+    <style name="RetroCardView" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/retro_dark_blue</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+    
+    <!-- Text Input Layout Style -->
+    <style name="RetroTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/retro_cyan</item>
+        <item name="hintTextColor">@color/retro_cyan</item>
+        <item name="android:textColorHint">@color/retro_gray</item>
+        <item name="startIconTint">@color/retro_cyan</item>
+        <item name="endIconTint">@color/retro_cyan</item>
+        <item name="errorTextColor">@color/retro_red</item>
+        <item name="errorIconTint">@color/retro_red</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="boxStrokeWidthFocused">3dp</item>
+    </style>
+    
+    <!-- Button Style -->
+    <style name="RetroButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/retro_computer</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+    
+    <!-- Progress Bar Style -->
+    <style name="RetroProgressBar" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/retro_progress</item>
+        <item name="android:indeterminateTint">@color/retro_cyan</item>
+    </style>
+    
+</resources>

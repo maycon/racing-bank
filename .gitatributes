@@ -1,0 +1,33 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Source code
+*.py text
+*.kt text
+*.java text
+*.xml text
+*.gradle text
+*.kts text
+
+# Documentation
+*.md text
+*.txt text
+
+# Scripts
+*.sh text eol=lf
+
+# Configuration
+*.yaml text
+*.yml text
+*.json text
+*.toml text
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.apk binary
+*.jar binary
+*.so binary

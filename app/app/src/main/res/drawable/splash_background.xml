@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <!-- Background gradient -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:centerColor="@color/retro_dark_blue"
+                android:centerY="0.5"
+                android:endColor="@color/retro_black"
+                android:startColor="@color/retro_dark_purple"
+                android:type="linear" />
+        </shape>
+    </item>
+    
+</layer-list>

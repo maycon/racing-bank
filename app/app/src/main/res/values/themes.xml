@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    <!-- Base Retro Theme -->
+    <style name="Theme.HackNRollBank" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/retro_purple</item>
+        <item name="colorPrimaryVariant">@color/retro_dark_purple</item>
+        <item name="colorOnPrimary">@color/retro_white</item>
+        
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/retro_cyan</item>
+        <item name="colorSecondaryVariant">@color/retro_pink</item>
+        <item name="colorOnSecondary">@color/retro_dark</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/retro_dark</item>
+        <item name="colorSurface">@color/retro_dark_gray</item>
+        <item name="colorOnSurface">@color/retro_white</item>
+        
+        <!-- Error color -->
+        <item name="colorError">@color/retro_red</item>
+        <item name="colorOnError">@color/retro_white</item>
+        
+        <!-- Status bar -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/retro_dark_purple</item>
+        <item name="android:navigationBarColor">@color/retro_dark</item>
+        
+        <!-- Window background -->
+        <item name="android:windowBackground">@drawable/gradient_background</item>
+        
+        <!-- Text appearance -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        
+        <!-- Font -->
+        <item name="android:fontFamily">@font/retro_computer</item>
+        <item name="fontFamily">@font/retro_computer</item>
+    </style>
+    
+    <!-- Splash Screen Theme -->
+    <style name="Theme.HackNRollBank.Splash" parent="Theme.HackNRollBank">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- Android 12+ Splash Screen -->
+        <item name="android:windowSplashScreenBackground" tools:targetApi="s">@color/retro_dark_purple</item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:targetApi="s">@mipmap/ic_launcher</item>
+        <item name="android:windowSplashScreenIconBackgroundColor" tools:targetApi="s">@color/retro_dark_purple</item>
+
+    </style>
+    
+    <!-- Auth Activity Theme -->
+    <style name="Theme.HackNRollBank.Auth" parent="Theme.HackNRollBank">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    
+    <!-- Main Activity Theme -->
+    <style name="Theme.HackNRollBank.Main" parent="Theme.HackNRollBank">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    
+    <!-- Scanner Theme -->
+    <style name="Theme.HackNRollBank.Scanner" parent="Theme.HackNRollBank">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    
+    <!-- Retro Alert Dialog -->
+    <style name="RetroAlertDialog" parent="Theme.MaterialComponents.Dialog.Alert">
+        <item name="android:windowBackground">@color/retro_dark_purple</item>
+        <item name="android:textColorPrimary">@color/retro_cyan</item>
+        <item name="android:textColorSecondary">@color/retro_pink</item>
+        <item name="colorAccent">@color/retro_green</item>
+        <item name="android:fontFamily">@font/retro_computer</item>
+        <item name="buttonBarNegativeButtonStyle">@style/RetroButton.Negative</item>
+        <item name="buttonBarPositiveButtonStyle">@style/RetroButton.Positive</item>
+    </style>
+    
+    <!-- Retro Button Styles -->
+    <style name="RetroButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/retro_dark</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/retro_computer</item>
+        <item name="cornerRadius">0dp</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+    <!-- Retro Switch Style -->
+    <style name="RetroSwitch" parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="colorControlActivated">@color/retro_cyan</item>
+        <item name="colorSwitchThumbNormal">@color/retro_gray</item>
+        <item name="android:colorForeground">@color/retro_dark_blue</item>
+    </style>
+    
+    <style name="RetroButton.Cyan">
+        <item name="backgroundTint">@color/retro_cyan</item>
+    </style>
+    
+    <style name="RetroButton.Pink">
+        <item name="backgroundTint">@color/retro_pink</item>
+    </style>
+    
+    <style name="RetroButton.Green">
+        <item name="backgroundTint">@color/retro_dark_green</item>
+        <item name="android:textColor">@color/retro_dark</item>
+    </style>
+    
+    <style name="RetroButton.Positive" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/retro_green</item>
+    </style>
+    
+    <style name="RetroButton.Negative" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/retro_red</item>
+    </style>
+    
+    <!-- Retro Text Input -->
+    <style name="RetroTextInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/retro_cyan</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="hintTextColor">@color/retro_pink</item>
+        <item name="android:textColorHint">@color/retro_pink</item>
+        <item name="errorTextColor">@color/retro_red</item>
+        <item name="android:fontFamily">@font/retro_computer</item>
+    </style>
+    
+    <!-- Retro Card -->
+    <style name="RetroCard" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/card_background</item>
+        <item name="cardCornerRadius">0dp</item>
+        <item name="cardElevation">8dp</item>
+        <item name="strokeColor">@color/card_border</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+    
+    <!-- Retro Progress Bar -->
+    <style name="RetroProgressBar" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateTint">@color/retro_cyan</item>
+        <item name="android:progressTint">@color/retro_cyan</item>
+    </style>
+    
+    <!-- Retro Tab Layout -->
+    <style name="RetroTabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicatorColor">@color/retro_cyan</item>
+        <item name="tabSelectedTextColor">@color/retro_cyan</item>
+        <item name="tabTextColor">@color/retro_pink</item>
+        <item name="android:fontFamily">@font/retro_computer</item>
+        <item name="tabTextAppearance">@style/RetroTabTextAppearance</item>
+    </style>
+    
+    <style name="RetroTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:fontFamily">@font/retro_computer</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+</resources>

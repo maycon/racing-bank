@@ -1,0 +1,92 @@
+### Android ###
+# Build
+/build/
+/app/build/
+/**/build/
+
+# Local configuration
+/local.properties
+*.keystore
+*.jks
+*.keystore.properties
+
+# Gradle
+.gradle/
+/**/.gradle/
+gradle-app.setting
+gradle-app.properties
+
+# Generated files
+captures/
+output.json
+*.iml
+
+# Log/Temp
+*.log
+*.cache
+*.tmp
+
+# IntelliJ / Android Studio
+.idea/*
+!.idea/codeStyles
+!.idea/runConfigurations
+!.idea/vcs.xml
+!.idea/misc.xml
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Android NDK
+.obj/
+externalNativeBuild/
+.cxx/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Kotlin
+*.kotlin_module
+
+# Jetpack Compose previews
+*.compose-preview
+
+# Google Services (caso use)
+# (Remova se quiser versionar o google-services.json)
+app/google-services.json
+app/src/**/google-services.json
+
+# Firebase Crashlytics
+crashlytics-build.properties
+
+# Signing keys
+signing.properties
+
+# VSCode (se estiver usando)
+.vscode/
+
+# Lint
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
+
+# Models gerados
+*.apk
+*.aab
+*.so
+
+# NPM / Node (se usar scripts)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Gradle Wrapper (IGNORAR APENAS SE QUISER)
+# Recomenda-se NÃO ignorar esses arquivos!
+# gradlew
+# gradlew.bat
+# gradle/wrapper/
+

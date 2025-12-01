@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/retro_dark_purple"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/securityIcon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="24dp"
+            android:src="@drawable/ic_security"
+            app:tint="@color/retro_green" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/retro_computer"
+            android:text="TWO-FACTOR AUTHENTICATION"
+            android:textColor="@color/retro_cyan"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/instructionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/retro_computer"
+            android:text="Enter the 6-digit code from your authenticator app"
+            android:textAlignment="center"
+            android:textColor="@color/retro_gray"
+            android:textSize="14sp" />
+
+        <!-- 6-digit code input fields -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/code1"
+                android:layout_width="48dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/code_input_background"
+                android:fontFamily="@font/retro_computer"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/retro_white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/code2"
+                android:layout_width="48dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/code_input_background"
+                android:fontFamily="@font/retro_computer"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/retro_white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/code3"
+                android:layout_width="48dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/code_input_background"
+                android:fontFamily="@font/retro_computer"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/retro_white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/code4"
+                android:layout_width="48dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/code_input_background"
+                android:fontFamily="@font/retro_computer"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/retro_white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/code5"
+                android:layout_width="48dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/code_input_background"
+                android:fontFamily="@font/retro_computer"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/retro_white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/code6"
+                android:layout_width="48dp"
+                android:layout_height="56dp"
+                android:layout_margin="4dp"
+                android:background="@drawable/code_input_background"
+                android:fontFamily="@font/retro_computer"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textColor="@color/retro_white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/timerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/retro_computer"
+            android:text="Code expires in: 30s"
+            android:textColor="@color/retro_yellow"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/verifyButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/retro_dark_green"
+            android:fontFamily="@font/retro_computer"
+            android:text="VERIFY"
+            android:textColor="@color/retro_white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/resendButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/retro_computer"
+            android:text="Resend Code"
+            android:textColor="@color/retro_cyan"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/backToLoginLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:fontFamily="@font/retro_computer"
+            android:padding="8dp"
+            android:text="← Back to Login"
+            android:textColor="@color/retro_pink"
+            android:textSize="14sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:indeterminateTint="@color/retro_cyan"
+            android:visibility="gone" />
+
+        <!-- QR Code Section (for setup) -->
+        <LinearLayout
+            android:id="@+id/qrCodeSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/retro_computer"
+                android:text="SCAN WITH GOOGLE AUTHENTICATOR"
+                android:textColor="@color/retro_cyan"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/qrCodeImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/retro_white"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/secretKeyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/code_input_background"
+                android:fontFamily="monospace"
+                android:padding="12dp"
+                android:text="SECRET KEY"
+                android:textAlignment="center"
+                android:textColor="@color/retro_green"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

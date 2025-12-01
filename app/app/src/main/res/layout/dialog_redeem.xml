@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/retro_dark_purple">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/retro_computer"
+        android:text="Enter shares to redeem"
+        android:textColor="@color/retro_cyan"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/amountInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/code_input_background"
+        android:fontFamily="@font/retro_computer"
+        android:hint="Number of shares"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:textColor="@color/retro_white"
+        android:textColorHint="@color/retro_gray"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/availableText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/retro_computer"
+        android:text="Available shares: 0.00"
+        android:textColor="@color/retro_yellow"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/shareValueText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/retro_computer"
+        android:text="Current share value: $0.00"
+        android:textColor="@color/retro_green"
+        android:textSize="12sp" />
+
+</LinearLayout>

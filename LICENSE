@@ -1,0 +1,61 @@
+Educational Use Only License
+
+Copyright (c) 2024 Hack N Roll
+
+EDUCATIONAL PURPOSE ONLY
+
+This software and associated documentation (the "Software") is provided for 
+educational and demonstration purposes only. The Software intentionally contains 
+security vulnerabilities to demonstrate race conditions in concurrent systems.
+
+TERMS AND CONDITIONS:
+
+1. PERMITTED USES:
+   - Educational purposes
+   - Security research
+   - Learning about race conditions
+   - Teaching concurrent programming concepts
+   - Academic research
+   - Security training
+
+2. PROHIBITED USES:
+   - Production deployment
+   - Commercial applications
+   - Real financial transactions
+   - Any use involving real money or real user data
+   - Malicious purposes
+   - Any use that could harm real systems or users
+
+3. NO WARRANTY:
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+   SOFTWARE.
+
+4. DISCLAIMER:
+   This software intentionally contains security vulnerabilities. DO NOT use
+   this code as a reference for building production systems. The vulnerabilities
+   are included for educational purposes only.
+
+5. MODIFICATION AND DISTRIBUTION:
+   - You may modify and distribute the Software for educational purposes
+   - You must include this license notice in all copies
+   - You must clearly indicate that the Software is for educational use only
+   - You must maintain all vulnerability warnings and disclaimers
+
+6. ATTRIBUTION:
+   When using this Software for educational purposes, please provide appropriate
+   attribution to the original authors and the TREM project.
+
+7. RESPONSIBILITY:
+   Users of this Software are solely responsible for ensuring their use complies
+   with all applicable laws and regulations. The authors assume no responsibility
+   for misuse of this Software.
+
+For more information about secure coding practices, please consult:
+- OWASP (https://owasp.org)
+- NIST Cybersecurity Framework
+- Your organization's security policies

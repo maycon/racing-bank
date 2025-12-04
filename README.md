@@ -18,7 +18,7 @@ This application was developed for **educational purposes only** to demonstrate 
 1. **Backend API** - FastAPI with intentional race condition vulnerabilities
 2. **Android App** - Mobile application with retro cyberpunk visual design
 
-This project was created as an educational demonstration for [TREM](https://github.com/otavioarj/TREM), showing in practice how race conditions can affect financial systems.
+This project was created as an educational demonstration for [TRECO](https://github.com/maycon/TRECO/) and [TREM](https://github.com/otavioarj/TREM), showing in practice how race conditions can affect financial systems.
 
 ---
 

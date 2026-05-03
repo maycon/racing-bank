@@ -17,6 +17,9 @@ jobs:
     name: Build APK
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
@@ -54,3 +57,19 @@ jobs:
           name: racing-bank-debug-${{ github.sha }}
           path: app/app/build/outputs/apk/debug/app-debug.apk
           retention-days: 30
+
+      - name: Publish to latest release
+        if: github.event_name == 'push'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release delete latest --yes 2>/dev/null || true
+          git tag -f latest
+          git push origin latest --force
+          gh release create latest \
+            app/app/build/outputs/apk/debug/app-debug.apk \
+            --title "Latest Build" \
+            --notes "**Commit:** ${{ github.sha }}
+          **Branch:** ${{ github.ref_name }}
+          **Built at:** $(date -u '+%Y-%m-%d %H:%M UTC')" \
+            --prerelease
